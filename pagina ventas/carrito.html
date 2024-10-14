@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Julliet Botas & estilo</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- ICONS: Line Awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <div class="hm-wrapper">
+
+        <!-- =================================
+           HEADER MENU
+        ================================== -->
+        <div class="hm-header">
+
+            <div class="container">
+                <div class="header-menu">
+
+                    <div class="hm-logo">
+                        <a href="index.html">
+                            <img src="img/logo-home-master-store.png" alt="dirige al menu principal menú">
+                        </a>
+                    </div>
+
+                    <nav class="hm-menu">
+                        <ul>
+                            <li><a href="Productos.html">Productos</a></li>
+                            <li><a href="Tiendas.html">Tiendas</a></li>
+                            <li><a href="Nosotros.html">Nosotros</a></li>
+                            <li><a href="Contacto.html">Contacto</a></li>
+                        </ul>
+
+
+                        <div class="hm-icon-cart">
+                            <a href="carrito.html">
+                                <i class="las la-shopping-cart"></i>
+                                <span>0</span>
+                            </a>
+                        </div>
+
+                        <div class="icon-menu">
+                            <button type="button"><i class="fas fa-bars"></i></button>
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<title>Carrito de Compras</title>
+    
+    <style>
+
+        .cart-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item img {
+            width: 100px;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .cart-summary {
+            text-align: right;
+            margin-top: 30px;
+        }
+    </style>
+
+<body>
+        <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Script de Font Awesome -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <div class="container">
+        <h1 class="cart-header">Carrito de Compras</h1>
+
+        <!-- Producto en el carrito -->
+        <div class="cart-item">
+            <img src="img/carrito-de-compras-1.jpg" alt="Producto 1"/>
+            <div class="cart-item-details">
+                <h5>Producto 1</h5>
+                <p>Precio: s/470</p>
+                <label for="quantity1">Cantidad:</label>
+                <input type="number" id="quantity1" value="1" min="1">
+            </div>
+            <div class="cart-item-remove">
+                <button class="btn btn-danger" onclick="eliminarProducto('quantity1')">
+                    <i class="fas fa-trash-alt"></i> Eliminar
+                </button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/carrito-de-compras-2.jpg" alt="Producto 2">
+            <div class="cart-item-details">
+                <h5>Producto 2</h5>
+                <p>Precio: s/470</p>
+                <label for="quantity2">Cantidad:</label>
+                <input type="number" id="quantity2" value="1" min="1">
+            </div>
+            <div class="cart-item-remove">
+                <button class="btn btn-danger" onclick="eliminarProducto('quantity2')">
+                    <i class="fas fa-trash-alt"></i> Eliminar
+                </button>
+            </div>
+        </div>
+
+        <!-- Resumen del carrito -->
+        <div class="cart-summary">
+            <h3>Total: s/940</h3>
+            <button class="btn btn-success">Seguir comprando</button>
+            <button class="btn btn-primary">Comprar Ahora</button>
+        </div>
+    </div>
+
+    <!-- Script de Bootstrap (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript para eliminar productos -->
+    <script>
+        function eliminarProducto(cantidadId) {
+            // Buscar el campo de cantidad por su id y establecer el valor en 0
+            document.getElementById(cantidadId).value = 0;
+        }
+    </script>
+</body>
+
